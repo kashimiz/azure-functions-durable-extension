@@ -15,6 +15,8 @@ using DurableTask.AzureStorage;
 using DurableTask.Core;
 using DurableTask.Core.Middleware;
 using Microsoft.Azure.WebJobs.Description;
+using Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc;
+using Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Azure.WebJobs.Host.Config;
 using Microsoft.Azure.WebJobs.Host.Executors;
@@ -62,6 +64,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.DurableTask
         private IConnectionStringResolver connectionStringResolver;
         private bool isTaskHubWorkerStarted;
 
+        private IRpcServer server;
+
 #if !NETSTANDARD2_0
         /// <summary>
         /// Obsolete. Please use an alternate constructor overload.
@@ -104,6 +108,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.DurableTask
             this.HttpApiHandler = new HttpApiHandler(this, logger);
             this.LifeCycleNotificationHelper = this.CreateLifeCycleNotificationHelper();
             this.isOptionsConfigured = true;
+
+            this.server = new GrpcServer(this);
         }
 
 #if !NETSTANDARD2_0
@@ -186,6 +192,10 @@ namespace Microsoft.Azure.WebJobs.Extensions.DurableTask
             this.orchestrationService = new AzureStorageOrchestrationService(this.orchestrationServiceSettings);
             this.taskHubWorker = new TaskHubWorker(this.orchestrationService, this, this);
             this.taskHubWorker.AddOrchestrationDispatcherMiddleware(this.OrchestrationMiddleware);
+
+            this.TraceHelper.ExtensionInformationalEvent(this.Options.HubName, string.Empty, string.Empty, message: $"Starting extension gRPC server on port {this.server.Uri.Port}", true);
+            this.server.StartAsync();    // TODO: This is terrible and should be changed. Later.
+            this.TraceHelper.ExtensionInformationalEvent(this.Options.HubName, string.Empty, string.Empty, message: $"Started extension gRPC server on port {this.server.Uri.Port}", true);
         }
 
         private void InitializeForFunctionsV1(ExtensionConfigContext context)

@@ -24,42 +24,43 @@ public static partial class DurableRpcReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "ChBEdXJhYmxlUnBjLnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1w",
-          "LnByb3RvIuoBCg1DbGllbnRSZXF1ZXN0EiEKBHR5cGUYASABKA4yEy5DbGll",
+          "LnByb3RvIo4CCg1DbGllbnRSZXF1ZXN0EiEKBHR5cGUYASABKA4yEy5DbGll",
           "bnRSZXF1ZXN0LlR5cGUSJgoEYXJncxgCIAMoCzIYLkNsaWVudFJlcXVlc3Qu",
-          "QXJnc0VudHJ5GjkKCUFyZ3NFbnRyeRILCgNrZXkYASABKAkSGwoFdmFsdWUY",
-          "AiABKAsyDC5SZXF1ZXN0RGF0YToCOAEiUwoEVHlwZRIKCgZTdGF0dXMQABIK",
-          "CgZDcmVhdGUQARINCglTZW5kRXZlbnQQAhINCglUZXJtaW5hdGUQAxIKCgZS",
-          "ZXdpbmQQBBIJCgVQdXJnZRAFIokBCg5DbGllbnRSZXNwb25zZRImCgZyZXN1",
-          "bHQYASABKA4yFi5DbGllbnRSZXNwb25zZS5SZXN1bHQSDQoFZXJyb3IYAiAB",
-          "KAwSGwoEZGF0YRgDIAEoCzINLlJlc3BvbnNlRGF0YSIjCgZSZXN1bHQSDQoJ",
-          "Q29tcGxldGVkEAASCgoGRmFpbGVkEAEiuAEKC1JlcXVlc3REYXRhEhAKBnN0",
-          "cmluZxgBIAEoCUgAEg8KBWJ5dGVzGAIgASgMSAASDgoEYm9vbBgDIAEoCEgA",
-          "Eg0KA2ludBgEIAEoEkgAEi8KCXRpbWVzdGFtcBgFIAEoCzIaLmdvb2dsZS5w",
-          "cm90b2J1Zi5UaW1lc3RhbXBIABIuChFjb2xsZWN0aW9uX3N0cmluZxgGIAEo",
-          "CzIRLkNvbGxlY3Rpb25TdHJpbmdIAEIGCgRkYXRhIoYBCgxSZXNwb25zZURh",
-          "dGESKwoGc3RhdHVzGAEgASgLMhsuRHVyYWJsZU9yY2hlc3RyYXRpb25TdGF0",
-          "dXMSLAoRc3RhdHVzX2NvbGxlY3Rpb24YAiABKAsyES5TdGF0dXNDb2xsZWN0",
-          "aW9uEg4KBnN0cmluZxgDIAEoCRILCgNpbnQYBCABKBIiIgoQQ29sbGVjdGlv",
-          "blN0cmluZxIOCgZzdHJpbmcYASADKAkiWQoQU3RhdHVzQ29sbGVjdGlvbhIq",
-          "CgVzdGF0ZRgBIAMoCzIbLkR1cmFibGVPcmNoZXN0cmF0aW9uU3RhdHVzEhkK",
-          "EWNvbnRpbnVhdGlvblRva2VuGAIgASgJIvoBChpEdXJhYmxlT3JjaGVzdHJh",
-          "dGlvblN0YXR1cxIMCgRuYW1lGAEgASgJEgoKAmlkGAIgASgJEi8KC2NyZWF0",
-          "ZWRUaW1lGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIzCg9s",
-          "YXN0VXBkYXRlZFRpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-          "YW1wEg0KBWlucHV0GAUgASgJEg4KBm91dHB1dBgGIAEoCRIWCg5ydW50aW1l",
-          "X3N0YXR1cxgHIAMoCRIUCgxjdXN0b21TdGF0dXMYCCABKAkSDwoHaGlzdG9y",
-          "eRgJIAMoCTJCCgpEdXJhYmxlUnBjEjQKD0NsaWVudE9wZXJhdGlvbhIOLkNs",
-          "aWVudFJlcXVlc3QaDy5DbGllbnRSZXNwb25zZSIAYgZwcm90bzM="));
+          "QXJnc0VudHJ5Eh0KBmNvbmZpZxgDIAEoCzINLkNsaWVudENvbmZpZxo+CglB",
+          "cmdzRW50cnkSCwoDa2V5GAEgASgJEiAKBXZhbHVlGAIgASgLMhEuRHVyYWJs",
+          "ZVR5cGVkRGF0YToCOAEiUwoEVHlwZRIKCgZTdGF0dXMQABIKCgZDcmVhdGUQ",
+          "ARINCglTZW5kRXZlbnQQAhINCglUZXJtaW5hdGUQAxIKCgZSZXdpbmQQBBIJ",
+          "CgVQdXJnZRAFIo0BCg5DbGllbnRSZXNwb25zZRImCgZyZXN1bHQYASABKA4y",
+          "Fi5DbGllbnRSZXNwb25zZS5SZXN1bHQSDQoFZXJyb3IYAiABKAwSHwoEZGF0",
+          "YRgDIAEoCzIRLkR1cmFibGVUeXBlZERhdGEiIwoGUmVzdWx0Eg0KCUNvbXBs",
+          "ZXRlZBAAEgoKBkZhaWxlZBABIv0BChBEdXJhYmxlVHlwZWREYXRhEhAKBnN0",
+          "cmluZxgBIAEoCUgAEg4KBGpzb24YAiABKAlIABIPCgVieXRlcxgDIAEoDEgA",
+          "Eg4KBGJvb2wYBCABKAhIABINCgNpbnQYBSABKBJIABIvCgl0aW1lc3RhbXAY",
+          "BiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAASLgoRY29sbGVj",
+          "dGlvbl9zdHJpbmcYByABKAsyES5TdHJpbmdDb2xsZWN0aW9uSAASLgoRY29s",
+          "bGVjdGlvbl9zdGF0dXMYCCABKAsyES5TdGF0dXNDb2xsZWN0aW9uSABCBgoE",
+          "ZGF0YSIjChBTdHJpbmdDb2xsZWN0aW9uEg8KB3N0cmluZ3MYASADKAkiWAoQ",
+          "U3RhdHVzQ29sbGVjdGlvbhIpCghzdGF0dXNlcxgBIAMoCzIXLlJwY09yY2hl",
+          "c3RyYXRpb25TdGF0dXMSGQoRY29udGludWF0aW9uVG9rZW4YAiABKAki9gEK",
+          "FlJwY09yY2hlc3RyYXRpb25TdGF0dXMSDAoEbmFtZRgBIAEoCRIKCgJpZBgC",
+          "IAEoCRIvCgtjcmVhdGVkVGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+          "aW1lc3RhbXASMwoPbGFzdFVwZGF0ZWRUaW1lGAQgASgLMhouZ29vZ2xlLnBy",
+          "b3RvYnVmLlRpbWVzdGFtcBINCgVpbnB1dBgFIAEoCRIOCgZvdXRwdXQYBiAB",
+          "KAkSFgoOcnVudGltZV9zdGF0dXMYByABKAkSFAoMY3VzdG9tU3RhdHVzGAgg",
+          "ASgJEg8KB2hpc3RvcnkYCSADKAkiNAoMQ2xpZW50Q29uZmlnEhAKCHRhc2tf",
+          "aHViGAEgASgJEhIKCmNvbm5lY3Rpb24YAiABKAkyQgoKRHVyYWJsZVJwYxI0",
+          "Cg9DbGllbnRPcGVyYXRpb24SDi5DbGllbnRSZXF1ZXN0Gg8uQ2xpZW50UmVz",
+          "cG9uc2UiAGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
         new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::ClientRequest), global::ClientRequest.Parser, new[]{ "Type", "Args" }, null, new[]{ typeof(global::ClientRequest.Types.Type) }, new pbr::GeneratedClrTypeInfo[] { null, }),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ClientRequest), global::ClientRequest.Parser, new[]{ "Type", "Args", "Config" }, null, new[]{ typeof(global::ClientRequest.Types.Type) }, new pbr::GeneratedClrTypeInfo[] { null, }),
           new pbr::GeneratedClrTypeInfo(typeof(global::ClientResponse), global::ClientResponse.Parser, new[]{ "Result", "Error", "Data" }, null, new[]{ typeof(global::ClientResponse.Types.Result) }, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RequestData), global::RequestData.Parser, new[]{ "String", "Bytes", "Bool", "Int", "Timestamp", "CollectionString" }, new[]{ "Data" }, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::ResponseData), global::ResponseData.Parser, new[]{ "Status", "StatusCollection", "String", "Int" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::CollectionString), global::CollectionString.Parser, new[]{ "String" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::StatusCollection), global::StatusCollection.Parser, new[]{ "State", "ContinuationToken" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::DurableOrchestrationStatus), global::DurableOrchestrationStatus.Parser, new[]{ "Name", "Id", "CreatedTime", "LastUpdatedTime", "Input", "Output", "RuntimeStatus", "CustomStatus", "History" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::DurableTypedData), global::DurableTypedData.Parser, new[]{ "String", "Json", "Bytes", "Bool", "Int", "Timestamp", "CollectionString", "CollectionStatus" }, new[]{ "Data" }, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::StringCollection), global::StringCollection.Parser, new[]{ "Strings" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::StatusCollection), global::StatusCollection.Parser, new[]{ "Statuses", "ContinuationToken" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RpcOrchestrationStatus), global::RpcOrchestrationStatus.Parser, new[]{ "Name", "Id", "CreatedTime", "LastUpdatedTime", "Input", "Output", "RuntimeStatus", "CustomStatus", "History" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::ClientConfig), global::ClientConfig.Parser, new[]{ "TaskHub", "Connection" }, null, null, null)
         }));
   }
   #endregion
@@ -93,6 +94,7 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
   public ClientRequest(ClientRequest other) : this() {
     type_ = other.type_;
     args_ = other.args_.Clone();
+    config_ = other.config_ != null ? other.config_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -117,15 +119,26 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
 
   /// <summary>Field number for the "args" field.</summary>
   public const int ArgsFieldNumber = 2;
-  private static readonly pbc::MapField<string, global::RequestData>.Codec _map_args_codec
-      = new pbc::MapField<string, global::RequestData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::RequestData.Parser), 18);
-  private readonly pbc::MapField<string, global::RequestData> args_ = new pbc::MapField<string, global::RequestData>();
+  private static readonly pbc::MapField<string, global::DurableTypedData>.Codec _map_args_codec
+      = new pbc::MapField<string, global::DurableTypedData>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::DurableTypedData.Parser), 18);
+  private readonly pbc::MapField<string, global::DurableTypedData> args_ = new pbc::MapField<string, global::DurableTypedData>();
   /// <summary>
-  /// properties
+  /// Request arguments
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::MapField<string, global::RequestData> Args {
+  public pbc::MapField<string, global::DurableTypedData> Args {
     get { return args_; }
+  }
+
+  /// <summary>Field number for the "config" field.</summary>
+  public const int ConfigFieldNumber = 3;
+  private global::ClientConfig config_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::ClientConfig Config {
+    get { return config_; }
+    set {
+      config_ = value;
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -143,6 +156,7 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
     }
     if (Type != other.Type) return false;
     if (!Args.Equals(other.Args)) return false;
+    if (!object.Equals(Config, other.Config)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -151,6 +165,7 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
     int hash = 1;
     if (Type != 0) hash ^= Type.GetHashCode();
     hash ^= Args.GetHashCode();
+    if (config_ != null) hash ^= Config.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -169,6 +184,10 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
       output.WriteEnum((int) Type);
     }
     args_.WriteTo(output, _map_args_codec);
+    if (config_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(Config);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -181,6 +200,9 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
     }
     size += args_.CalculateSize(_map_args_codec);
+    if (config_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Config);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -196,6 +218,12 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
       Type = other.Type;
     }
     args_.Add(other.args_);
+    if (other.config_ != null) {
+      if (config_ == null) {
+        Config = new global::ClientConfig();
+      }
+      Config.MergeFrom(other.Config);
+    }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -213,6 +241,13 @@ public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
         }
         case 18: {
           args_.AddEntriesFrom(input, _map_args_codec);
+          break;
+        }
+        case 26: {
+          if (config_ == null) {
+            Config = new global::ClientConfig();
+          }
+          input.ReadMessage(Config);
           break;
         }
       }
@@ -302,12 +337,12 @@ public sealed partial class ClientResponse : pb::IMessage<ClientResponse> {
 
   /// <summary>Field number for the "data" field.</summary>
   public const int DataFieldNumber = 3;
-  private global::ResponseData data_;
+  private global::DurableTypedData data_;
   /// <summary>
   /// TODO: not bytes
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::ResponseData Data {
+  public global::DurableTypedData Data {
     get { return data_; }
     set {
       data_ = value;
@@ -400,7 +435,7 @@ public sealed partial class ClientResponse : pb::IMessage<ClientResponse> {
     }
     if (other.data_ != null) {
       if (data_ == null) {
-        Data = new global::ResponseData();
+        Data = new global::DurableTypedData();
       }
       Data.MergeFrom(other.Data);
     }
@@ -425,7 +460,7 @@ public sealed partial class ClientResponse : pb::IMessage<ClientResponse> {
         }
         case 26: {
           if (data_ == null) {
-            Data = new global::ResponseData();
+            Data = new global::DurableTypedData();
           }
           input.ReadMessage(Data);
           break;
@@ -449,13 +484,13 @@ public sealed partial class ClientResponse : pb::IMessage<ClientResponse> {
 }
 
 /// <summary>
-/// Used to encapsulate request data which could be a variety of types
+/// Used to encapsulate data which could be a variety of types
 /// </summary>
-public sealed partial class RequestData : pb::IMessage<RequestData> {
-  private static readonly pb::MessageParser<RequestData> _parser = new pb::MessageParser<RequestData>(() => new RequestData());
+public sealed partial class DurableTypedData : pb::IMessage<DurableTypedData> {
+  private static readonly pb::MessageParser<DurableTypedData> _parser = new pb::MessageParser<DurableTypedData>(() => new DurableTypedData());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<RequestData> Parser { get { return _parser; } }
+  public static pb::MessageParser<DurableTypedData> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -468,17 +503,20 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RequestData() {
+  public DurableTypedData() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RequestData(RequestData other) : this() {
+  public DurableTypedData(DurableTypedData other) : this() {
     switch (other.DataCase) {
       case DataOneofCase.String:
         String = other.String;
+        break;
+      case DataOneofCase.Json:
+        Json = other.Json;
         break;
       case DataOneofCase.Bytes:
         Bytes = other.Bytes;
@@ -495,14 +533,17 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
       case DataOneofCase.CollectionString:
         CollectionString = other.CollectionString.Clone();
         break;
+      case DataOneofCase.CollectionStatus:
+        CollectionStatus = other.CollectionStatus.Clone();
+        break;
     }
 
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public RequestData Clone() {
-    return new RequestData(this);
+  public DurableTypedData Clone() {
+    return new DurableTypedData(this);
   }
 
   /// <summary>Field number for the "string" field.</summary>
@@ -516,8 +557,19 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
     }
   }
 
+  /// <summary>Field number for the "json" field.</summary>
+  public const int JsonFieldNumber = 2;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Json {
+    get { return dataCase_ == DataOneofCase.Json ? (string) data_ : ""; }
+    set {
+      data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      dataCase_ = DataOneofCase.Json;
+    }
+  }
+
   /// <summary>Field number for the "bytes" field.</summary>
-  public const int BytesFieldNumber = 2;
+  public const int BytesFieldNumber = 3;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pb::ByteString Bytes {
     get { return dataCase_ == DataOneofCase.Bytes ? (pb::ByteString) data_ : pb::ByteString.Empty; }
@@ -528,7 +580,7 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   /// <summary>Field number for the "bool" field.</summary>
-  public const int BoolFieldNumber = 3;
+  public const int BoolFieldNumber = 4;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public bool Bool {
     get { return dataCase_ == DataOneofCase.Bool ? (bool) data_ : false; }
@@ -539,7 +591,7 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   /// <summary>Field number for the "int" field.</summary>
-  public const int IntFieldNumber = 4;
+  public const int IntFieldNumber = 5;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Int {
     get { return dataCase_ == DataOneofCase.Int ? (long) data_ : 0L; }
@@ -550,7 +602,7 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   /// <summary>Field number for the "timestamp" field.</summary>
-  public const int TimestampFieldNumber = 5;
+  public const int TimestampFieldNumber = 6;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
     get { return dataCase_ == DataOneofCase.Timestamp ? (global::Google.Protobuf.WellKnownTypes.Timestamp) data_ : null; }
@@ -561,13 +613,24 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   /// <summary>Field number for the "collection_string" field.</summary>
-  public const int CollectionStringFieldNumber = 6;
+  public const int CollectionStringFieldNumber = 7;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::CollectionString CollectionString {
-    get { return dataCase_ == DataOneofCase.CollectionString ? (global::CollectionString) data_ : null; }
+  public global::StringCollection CollectionString {
+    get { return dataCase_ == DataOneofCase.CollectionString ? (global::StringCollection) data_ : null; }
     set {
       data_ = value;
       dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.CollectionString;
+    }
+  }
+
+  /// <summary>Field number for the "collection_status" field.</summary>
+  public const int CollectionStatusFieldNumber = 8;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::StatusCollection CollectionStatus {
+    get { return dataCase_ == DataOneofCase.CollectionStatus ? (global::StatusCollection) data_ : null; }
+    set {
+      data_ = value;
+      dataCase_ = value == null ? DataOneofCase.None : DataOneofCase.CollectionStatus;
     }
   }
 
@@ -576,11 +639,13 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   public enum DataOneofCase {
     None = 0,
     String = 1,
-    Bytes = 2,
-    Bool = 3,
-    Int = 4,
-    Timestamp = 5,
-    CollectionString = 6,
+    Json = 2,
+    Bytes = 3,
+    Bool = 4,
+    Int = 5,
+    Timestamp = 6,
+    CollectionString = 7,
+    CollectionStatus = 8,
   }
   private DataOneofCase dataCase_ = DataOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -596,11 +661,11 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as RequestData);
+    return Equals(other as DurableTypedData);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(RequestData other) {
+  public bool Equals(DurableTypedData other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -608,11 +673,13 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
       return true;
     }
     if (String != other.String) return false;
+    if (Json != other.Json) return false;
     if (Bytes != other.Bytes) return false;
     if (Bool != other.Bool) return false;
     if (Int != other.Int) return false;
     if (!object.Equals(Timestamp, other.Timestamp)) return false;
     if (!object.Equals(CollectionString, other.CollectionString)) return false;
+    if (!object.Equals(CollectionStatus, other.CollectionStatus)) return false;
     if (DataCase != other.DataCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -621,11 +688,13 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   public override int GetHashCode() {
     int hash = 1;
     if (dataCase_ == DataOneofCase.String) hash ^= String.GetHashCode();
+    if (dataCase_ == DataOneofCase.Json) hash ^= Json.GetHashCode();
     if (dataCase_ == DataOneofCase.Bytes) hash ^= Bytes.GetHashCode();
     if (dataCase_ == DataOneofCase.Bool) hash ^= Bool.GetHashCode();
     if (dataCase_ == DataOneofCase.Int) hash ^= Int.GetHashCode();
     if (dataCase_ == DataOneofCase.Timestamp) hash ^= Timestamp.GetHashCode();
     if (dataCase_ == DataOneofCase.CollectionString) hash ^= CollectionString.GetHashCode();
+    if (dataCase_ == DataOneofCase.CollectionStatus) hash ^= CollectionStatus.GetHashCode();
     hash ^= (int) dataCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -644,25 +713,33 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
       output.WriteRawTag(10);
       output.WriteString(String);
     }
-    if (dataCase_ == DataOneofCase.Bytes) {
+    if (dataCase_ == DataOneofCase.Json) {
       output.WriteRawTag(18);
+      output.WriteString(Json);
+    }
+    if (dataCase_ == DataOneofCase.Bytes) {
+      output.WriteRawTag(26);
       output.WriteBytes(Bytes);
     }
     if (dataCase_ == DataOneofCase.Bool) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteBool(Bool);
     }
     if (dataCase_ == DataOneofCase.Int) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteSInt64(Int);
     }
     if (dataCase_ == DataOneofCase.Timestamp) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteMessage(Timestamp);
     }
     if (dataCase_ == DataOneofCase.CollectionString) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteMessage(CollectionString);
+    }
+    if (dataCase_ == DataOneofCase.CollectionStatus) {
+      output.WriteRawTag(66);
+      output.WriteMessage(CollectionStatus);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -674,6 +751,9 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
     int size = 0;
     if (dataCase_ == DataOneofCase.String) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(String);
+    }
+    if (dataCase_ == DataOneofCase.Json) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Json);
     }
     if (dataCase_ == DataOneofCase.Bytes) {
       size += 1 + pb::CodedOutputStream.ComputeBytesSize(Bytes);
@@ -690,6 +770,9 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
     if (dataCase_ == DataOneofCase.CollectionString) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(CollectionString);
     }
+    if (dataCase_ == DataOneofCase.CollectionStatus) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(CollectionStatus);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -697,13 +780,16 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(RequestData other) {
+  public void MergeFrom(DurableTypedData other) {
     if (other == null) {
       return;
     }
     switch (other.DataCase) {
       case DataOneofCase.String:
         String = other.String;
+        break;
+      case DataOneofCase.Json:
+        Json = other.Json;
         break;
       case DataOneofCase.Bytes:
         Bytes = other.Bytes;
@@ -722,9 +808,15 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
         break;
       case DataOneofCase.CollectionString:
         if (CollectionString == null) {
-          CollectionString = new global::CollectionString();
+          CollectionString = new global::StringCollection();
         }
         CollectionString.MergeFrom(other.CollectionString);
+        break;
+      case DataOneofCase.CollectionStatus:
+        if (CollectionStatus == null) {
+          CollectionStatus = new global::StatusCollection();
+        }
+        CollectionStatus.MergeFrom(other.CollectionStatus);
         break;
     }
 
@@ -744,18 +836,22 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
           break;
         }
         case 18: {
+          Json = input.ReadString();
+          break;
+        }
+        case 26: {
           Bytes = input.ReadBytes();
           break;
         }
-        case 24: {
+        case 32: {
           Bool = input.ReadBool();
           break;
         }
-        case 32: {
+        case 40: {
           Int = input.ReadSInt64();
           break;
         }
-        case 42: {
+        case 50: {
           global::Google.Protobuf.WellKnownTypes.Timestamp subBuilder = new global::Google.Protobuf.WellKnownTypes.Timestamp();
           if (dataCase_ == DataOneofCase.Timestamp) {
             subBuilder.MergeFrom(Timestamp);
@@ -764,13 +860,22 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
           Timestamp = subBuilder;
           break;
         }
-        case 50: {
-          global::CollectionString subBuilder = new global::CollectionString();
+        case 58: {
+          global::StringCollection subBuilder = new global::StringCollection();
           if (dataCase_ == DataOneofCase.CollectionString) {
             subBuilder.MergeFrom(CollectionString);
           }
           input.ReadMessage(subBuilder);
           CollectionString = subBuilder;
+          break;
+        }
+        case 66: {
+          global::StatusCollection subBuilder = new global::StatusCollection();
+          if (dataCase_ == DataOneofCase.CollectionStatus) {
+            subBuilder.MergeFrom(CollectionStatus);
+          }
+          input.ReadMessage(subBuilder);
+          CollectionStatus = subBuilder;
           break;
         }
       }
@@ -780,13 +885,13 @@ public sealed partial class RequestData : pb::IMessage<RequestData> {
 }
 
 /// <summary>
-/// Used to encapsulate response data which could be a variety of types
+/// Used to encapsulate collection string
 /// </summary>
-public sealed partial class ResponseData : pb::IMessage<ResponseData> {
-  private static readonly pb::MessageParser<ResponseData> _parser = new pb::MessageParser<ResponseData>(() => new ResponseData());
+public sealed partial class StringCollection : pb::IMessage<StringCollection> {
+  private static readonly pb::MessageParser<StringCollection> _parser = new pb::MessageParser<StringCollection>(() => new StringCollection());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<ResponseData> Parser { get { return _parser; } }
+  public static pb::MessageParser<StringCollection> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -799,282 +904,54 @@ public sealed partial class ResponseData : pb::IMessage<ResponseData> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public ResponseData() {
+  public StringCollection() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public ResponseData(ResponseData other) : this() {
-    status_ = other.status_ != null ? other.status_.Clone() : null;
-    statusCollection_ = other.statusCollection_ != null ? other.statusCollection_.Clone() : null;
-    string_ = other.string_;
-    int_ = other.int_;
+  public StringCollection(StringCollection other) : this() {
+    strings_ = other.strings_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public ResponseData Clone() {
-    return new ResponseData(this);
+  public StringCollection Clone() {
+    return new StringCollection(this);
   }
 
-  /// <summary>Field number for the "status" field.</summary>
-  public const int StatusFieldNumber = 1;
-  private global::DurableOrchestrationStatus status_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::DurableOrchestrationStatus Status {
-    get { return status_; }
-    set {
-      status_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "status_collection" field.</summary>
-  public const int StatusCollectionFieldNumber = 2;
-  private global::StatusCollection statusCollection_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::StatusCollection StatusCollection {
-    get { return statusCollection_; }
-    set {
-      statusCollection_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "string" field.</summary>
-  public const int StringFieldNumber = 3;
-  private string string_ = "";
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string String {
-    get { return string_; }
-    set {
-      string_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
-  /// <summary>Field number for the "int" field.</summary>
-  public const int IntFieldNumber = 4;
-  private long int_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Int {
-    get { return int_; }
-    set {
-      int_ = value;
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as ResponseData);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(ResponseData other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if (!object.Equals(Status, other.Status)) return false;
-    if (!object.Equals(StatusCollection, other.StatusCollection)) return false;
-    if (String != other.String) return false;
-    if (Int != other.Int) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    if (status_ != null) hash ^= Status.GetHashCode();
-    if (statusCollection_ != null) hash ^= StatusCollection.GetHashCode();
-    if (String.Length != 0) hash ^= String.GetHashCode();
-    if (Int != 0L) hash ^= Int.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-    if (status_ != null) {
-      output.WriteRawTag(10);
-      output.WriteMessage(Status);
-    }
-    if (statusCollection_ != null) {
-      output.WriteRawTag(18);
-      output.WriteMessage(StatusCollection);
-    }
-    if (String.Length != 0) {
-      output.WriteRawTag(26);
-      output.WriteString(String);
-    }
-    if (Int != 0L) {
-      output.WriteRawTag(32);
-      output.WriteSInt64(Int);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    if (status_ != null) {
-      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
-    }
-    if (statusCollection_ != null) {
-      size += 1 + pb::CodedOutputStream.ComputeMessageSize(StatusCollection);
-    }
-    if (String.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(String);
-    }
-    if (Int != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeSInt64Size(Int);
-    }
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(ResponseData other) {
-    if (other == null) {
-      return;
-    }
-    if (other.status_ != null) {
-      if (status_ == null) {
-        Status = new global::DurableOrchestrationStatus();
-      }
-      Status.MergeFrom(other.Status);
-    }
-    if (other.statusCollection_ != null) {
-      if (statusCollection_ == null) {
-        StatusCollection = new global::StatusCollection();
-      }
-      StatusCollection.MergeFrom(other.StatusCollection);
-    }
-    if (other.String.Length != 0) {
-      String = other.String;
-    }
-    if (other.Int != 0L) {
-      Int = other.Int;
-    }
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 10: {
-          if (status_ == null) {
-            Status = new global::DurableOrchestrationStatus();
-          }
-          input.ReadMessage(Status);
-          break;
-        }
-        case 18: {
-          if (statusCollection_ == null) {
-            StatusCollection = new global::StatusCollection();
-          }
-          input.ReadMessage(StatusCollection);
-          break;
-        }
-        case 26: {
-          String = input.ReadString();
-          break;
-        }
-        case 32: {
-          Int = input.ReadSInt64();
-          break;
-        }
-      }
-    }
-  }
-
-}
-
-/// <summary>
-/// Used to encapsulate collection string
-/// </summary>
-public sealed partial class CollectionString : pb::IMessage<CollectionString> {
-  private static readonly pb::MessageParser<CollectionString> _parser = new pb::MessageParser<CollectionString>(() => new CollectionString());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<CollectionString> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::DurableRpcReflection.Descriptor.MessageTypes[4]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public CollectionString() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public CollectionString(CollectionString other) : this() {
-    string_ = other.string_.Clone();
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public CollectionString Clone() {
-    return new CollectionString(this);
-  }
-
-  /// <summary>Field number for the "string" field.</summary>
-  public const int StringFieldNumber = 1;
-  private static readonly pb::FieldCodec<string> _repeated_string_codec
+  /// <summary>Field number for the "strings" field.</summary>
+  public const int StringsFieldNumber = 1;
+  private static readonly pb::FieldCodec<string> _repeated_strings_codec
       = pb::FieldCodec.ForString(10);
-  private readonly pbc::RepeatedField<string> string_ = new pbc::RepeatedField<string>();
+  private readonly pbc::RepeatedField<string> strings_ = new pbc::RepeatedField<string>();
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<string> String {
-    get { return string_; }
+  public pbc::RepeatedField<string> Strings {
+    get { return strings_; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as CollectionString);
+    return Equals(other as StringCollection);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(CollectionString other) {
+  public bool Equals(StringCollection other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if(!string_.Equals(other.string_)) return false;
+    if(!strings_.Equals(other.strings_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    hash ^= string_.GetHashCode();
+    hash ^= strings_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1088,7 +965,7 @@ public sealed partial class CollectionString : pb::IMessage<CollectionString> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
-    string_.WriteTo(output, _repeated_string_codec);
+    strings_.WriteTo(output, _repeated_strings_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1097,7 +974,7 @@ public sealed partial class CollectionString : pb::IMessage<CollectionString> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    size += string_.CalculateSize(_repeated_string_codec);
+    size += strings_.CalculateSize(_repeated_strings_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -1105,11 +982,11 @@ public sealed partial class CollectionString : pb::IMessage<CollectionString> {
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(CollectionString other) {
+  public void MergeFrom(StringCollection other) {
     if (other == null) {
       return;
     }
-    string_.Add(other.string_);
+    strings_.Add(other.strings_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -1122,7 +999,7 @@ public sealed partial class CollectionString : pb::IMessage<CollectionString> {
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 10: {
-          string_.AddEntriesFrom(input, _repeated_string_codec);
+          strings_.AddEntriesFrom(input, _repeated_strings_codec);
           break;
         }
       }
@@ -1139,7 +1016,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DurableRpcReflection.Descriptor.MessageTypes[5]; }
+    get { return global::DurableRpcReflection.Descriptor.MessageTypes[4]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1156,7 +1033,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public StatusCollection(StatusCollection other) : this() {
-    state_ = other.state_.Clone();
+    statuses_ = other.statuses_.Clone();
     continuationToken_ = other.continuationToken_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -1166,14 +1043,14 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
     return new StatusCollection(this);
   }
 
-  /// <summary>Field number for the "state" field.</summary>
-  public const int StateFieldNumber = 1;
-  private static readonly pb::FieldCodec<global::DurableOrchestrationStatus> _repeated_state_codec
-      = pb::FieldCodec.ForMessage(10, global::DurableOrchestrationStatus.Parser);
-  private readonly pbc::RepeatedField<global::DurableOrchestrationStatus> state_ = new pbc::RepeatedField<global::DurableOrchestrationStatus>();
+  /// <summary>Field number for the "statuses" field.</summary>
+  public const int StatusesFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::RpcOrchestrationStatus> _repeated_statuses_codec
+      = pb::FieldCodec.ForMessage(10, global::RpcOrchestrationStatus.Parser);
+  private readonly pbc::RepeatedField<global::RpcOrchestrationStatus> statuses_ = new pbc::RepeatedField<global::RpcOrchestrationStatus>();
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::DurableOrchestrationStatus> State {
-    get { return state_; }
+  public pbc::RepeatedField<global::RpcOrchestrationStatus> Statuses {
+    get { return statuses_; }
   }
 
   /// <summary>Field number for the "continuationToken" field.</summary>
@@ -1200,7 +1077,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if(!state_.Equals(other.state_)) return false;
+    if(!statuses_.Equals(other.statuses_)) return false;
     if (ContinuationToken != other.ContinuationToken) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1208,7 +1085,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    hash ^= state_.GetHashCode();
+    hash ^= statuses_.GetHashCode();
     if (ContinuationToken.Length != 0) hash ^= ContinuationToken.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1223,7 +1100,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
-    state_.WriteTo(output, _repeated_state_codec);
+    statuses_.WriteTo(output, _repeated_statuses_codec);
     if (ContinuationToken.Length != 0) {
       output.WriteRawTag(18);
       output.WriteString(ContinuationToken);
@@ -1236,7 +1113,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    size += state_.CalculateSize(_repeated_state_codec);
+    size += statuses_.CalculateSize(_repeated_statuses_codec);
     if (ContinuationToken.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(ContinuationToken);
     }
@@ -1251,7 +1128,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
     if (other == null) {
       return;
     }
-    state_.Add(other.state_);
+    statuses_.Add(other.statuses_);
     if (other.ContinuationToken.Length != 0) {
       ContinuationToken = other.ContinuationToken;
     }
@@ -1267,7 +1144,7 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 10: {
-          state_.AddEntriesFrom(input, _repeated_state_codec);
+          statuses_.AddEntriesFrom(input, _repeated_statuses_codec);
           break;
         }
         case 18: {
@@ -1280,15 +1157,15 @@ public sealed partial class StatusCollection : pb::IMessage<StatusCollection> {
 
 }
 
-public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrchestrationStatus> {
-  private static readonly pb::MessageParser<DurableOrchestrationStatus> _parser = new pb::MessageParser<DurableOrchestrationStatus>(() => new DurableOrchestrationStatus());
+public sealed partial class RpcOrchestrationStatus : pb::IMessage<RpcOrchestrationStatus> {
+  private static readonly pb::MessageParser<RpcOrchestrationStatus> _parser = new pb::MessageParser<RpcOrchestrationStatus>(() => new RpcOrchestrationStatus());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<DurableOrchestrationStatus> Parser { get { return _parser; } }
+  public static pb::MessageParser<RpcOrchestrationStatus> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::DurableRpcReflection.Descriptor.MessageTypes[6]; }
+    get { return global::DurableRpcReflection.Descriptor.MessageTypes[5]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1297,29 +1174,29 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DurableOrchestrationStatus() {
+  public RpcOrchestrationStatus() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DurableOrchestrationStatus(DurableOrchestrationStatus other) : this() {
+  public RpcOrchestrationStatus(RpcOrchestrationStatus other) : this() {
     name_ = other.name_;
     id_ = other.id_;
     createdTime_ = other.createdTime_ != null ? other.createdTime_.Clone() : null;
     lastUpdatedTime_ = other.lastUpdatedTime_ != null ? other.lastUpdatedTime_.Clone() : null;
     input_ = other.input_;
     output_ = other.output_;
-    runtimeStatus_ = other.runtimeStatus_.Clone();
+    runtimeStatus_ = other.runtimeStatus_;
     customStatus_ = other.customStatus_;
     history_ = other.history_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public DurableOrchestrationStatus Clone() {
-    return new DurableOrchestrationStatus(this);
+  public RpcOrchestrationStatus Clone() {
+    return new RpcOrchestrationStatus(this);
   }
 
   /// <summary>Field number for the "name" field.</summary>
@@ -1390,12 +1267,13 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
 
   /// <summary>Field number for the "runtime_status" field.</summary>
   public const int RuntimeStatusFieldNumber = 7;
-  private static readonly pb::FieldCodec<string> _repeated_runtimeStatus_codec
-      = pb::FieldCodec.ForString(58);
-  private readonly pbc::RepeatedField<string> runtimeStatus_ = new pbc::RepeatedField<string>();
+  private string runtimeStatus_ = "";
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<string> RuntimeStatus {
+  public string RuntimeStatus {
     get { return runtimeStatus_; }
+    set {
+      runtimeStatus_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
   }
 
   /// <summary>Field number for the "customStatus" field.</summary>
@@ -1421,11 +1299,11 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as DurableOrchestrationStatus);
+    return Equals(other as RpcOrchestrationStatus);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(DurableOrchestrationStatus other) {
+  public bool Equals(RpcOrchestrationStatus other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -1438,7 +1316,7 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
     if (!object.Equals(LastUpdatedTime, other.LastUpdatedTime)) return false;
     if (Input != other.Input) return false;
     if (Output != other.Output) return false;
-    if(!runtimeStatus_.Equals(other.runtimeStatus_)) return false;
+    if (RuntimeStatus != other.RuntimeStatus) return false;
     if (CustomStatus != other.CustomStatus) return false;
     if(!history_.Equals(other.history_)) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -1453,7 +1331,7 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
     if (lastUpdatedTime_ != null) hash ^= LastUpdatedTime.GetHashCode();
     if (Input.Length != 0) hash ^= Input.GetHashCode();
     if (Output.Length != 0) hash ^= Output.GetHashCode();
-    hash ^= runtimeStatus_.GetHashCode();
+    if (RuntimeStatus.Length != 0) hash ^= RuntimeStatus.GetHashCode();
     if (CustomStatus.Length != 0) hash ^= CustomStatus.GetHashCode();
     hash ^= history_.GetHashCode();
     if (_unknownFields != null) {
@@ -1493,7 +1371,10 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
       output.WriteRawTag(50);
       output.WriteString(Output);
     }
-    runtimeStatus_.WriteTo(output, _repeated_runtimeStatus_codec);
+    if (RuntimeStatus.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteString(RuntimeStatus);
+    }
     if (CustomStatus.Length != 0) {
       output.WriteRawTag(66);
       output.WriteString(CustomStatus);
@@ -1525,7 +1406,9 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
     if (Output.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Output);
     }
-    size += runtimeStatus_.CalculateSize(_repeated_runtimeStatus_codec);
+    if (RuntimeStatus.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(RuntimeStatus);
+    }
     if (CustomStatus.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomStatus);
     }
@@ -1537,7 +1420,7 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(DurableOrchestrationStatus other) {
+  public void MergeFrom(RpcOrchestrationStatus other) {
     if (other == null) {
       return;
     }
@@ -1565,7 +1448,9 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
     if (other.Output.Length != 0) {
       Output = other.Output;
     }
-    runtimeStatus_.Add(other.runtimeStatus_);
+    if (other.RuntimeStatus.Length != 0) {
+      RuntimeStatus = other.RuntimeStatus;
+    }
     if (other.CustomStatus.Length != 0) {
       CustomStatus = other.CustomStatus;
     }
@@ -1612,7 +1497,7 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
           break;
         }
         case 58: {
-          runtimeStatus_.AddEntriesFrom(input, _repeated_runtimeStatus_codec);
+          RuntimeStatus = input.ReadString();
           break;
         }
         case 66: {
@@ -1621,6 +1506,166 @@ public sealed partial class DurableOrchestrationStatus : pb::IMessage<DurableOrc
         }
         case 74: {
           history_.AddEntriesFrom(input, _repeated_history_codec);
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+/// Information from the client binding
+/// </summary>
+public sealed partial class ClientConfig : pb::IMessage<ClientConfig> {
+  private static readonly pb::MessageParser<ClientConfig> _parser = new pb::MessageParser<ClientConfig>(() => new ClientConfig());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<ClientConfig> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::DurableRpcReflection.Descriptor.MessageTypes[6]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ClientConfig() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ClientConfig(ClientConfig other) : this() {
+    taskHub_ = other.taskHub_;
+    connection_ = other.connection_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ClientConfig Clone() {
+    return new ClientConfig(this);
+  }
+
+  /// <summary>Field number for the "task_hub" field.</summary>
+  public const int TaskHubFieldNumber = 1;
+  private string taskHub_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string TaskHub {
+    get { return taskHub_; }
+    set {
+      taskHub_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "connection" field.</summary>
+  public const int ConnectionFieldNumber = 2;
+  private string connection_ = "";
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Connection {
+    get { return connection_; }
+    set {
+      connection_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as ClientConfig);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(ClientConfig other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (TaskHub != other.TaskHub) return false;
+    if (Connection != other.Connection) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (TaskHub.Length != 0) hash ^= TaskHub.GetHashCode();
+    if (Connection.Length != 0) hash ^= Connection.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (TaskHub.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(TaskHub);
+    }
+    if (Connection.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Connection);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (TaskHub.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(TaskHub);
+    }
+    if (Connection.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Connection);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(ClientConfig other) {
+    if (other == null) {
+      return;
+    }
+    if (other.TaskHub.Length != 0) {
+      TaskHub = other.TaskHub;
+    }
+    if (other.Connection.Length != 0) {
+      Connection = other.Connection;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          TaskHub = input.ReadString();
+          break;
+        }
+        case 18: {
+          Connection = input.ReadString();
           break;
         }
       }

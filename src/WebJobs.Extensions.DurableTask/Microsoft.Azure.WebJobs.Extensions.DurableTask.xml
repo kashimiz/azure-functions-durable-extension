@@ -372,6 +372,60 @@
             The type of a function.
             </summary>
         </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions.IRpcServer.Uri">
+            <summary>
+            Gets the address that the rpc server is listening on
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions.IRpcServer.StartAsync">
+            <summary>
+            Starts a server which will listen for rpc connections
+            </summary>
+            <returns>A task that completes when the server is ready</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions.IRpcServer.KillAsync">
+            <summary>
+            Forces a server shutdown
+            </summary>
+            <returns>A task that completes when the server is killed</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions.IRpcServer.ShutdownAsync">
+            <summary>
+            Gracefully shuts down the rpc server, allowing existing calls to finish
+            </summary>
+            <returns>A task that completes when the server has shutdown</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.#ctor(Microsoft.Azure.WebJobs.Extensions.DurableTask.DurableTaskExtension)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer"/> class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.Uri">
+            <summary>
+            TODO.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.StartAsync">
+            <summary>
+            TODO.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.ShutdownAsync">
+            <summary>
+            TODO.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.KillAsync">
+            <summary>
+            TODO.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.GrpcServer.Dispose">
+            <inheritdoc/>
+        </member>
         <member name="T:Microsoft.Azure.WebJobs.Extensions.DurableTask.GuidManager">
             <summary>
             Class for creating deterministic <see cref="T:System.Guid"/>.
@@ -759,20 +813,7 @@
         </member>
         <member name="M:Microsoft.Azure.WebJobs.DurableOrchestrationClientBase.WaitForCompletionOrCreateCheckStatusResponseAsync(System.Net.Http.HttpRequestMessage,System.String)">
             <summary>
-            Creates an HTTP response which either contains a payload of management URLs for a non-completed instance
-            or contains the payload containing the output of the completed orchestration.
-            </summary>
-            <remarks>
-            If the orchestration instance completes within the default 10 second timeout, then the HTTP response payload will
-            contain the output of the orchestration instance formatted as JSON. However, if the orchestration does not
-            complete within this timeout, then the HTTP response will be identical to that of the
-            <see cref="M:Microsoft.Azure.WebJobs.DurableOrchestrationClientBase.CreateCheckStatusResponse(System.Net.Http.HttpRequestMessage,System.String)"/> API.
-            </remarks>
-            <param name="request">The HTTP request that triggered the current function.</param>
-            <param name="instanceId">The unique ID of the instance to check.</param>
-            <returns>An HTTP response which may include a 202 and location header or a 200 with the durable function output in the response body.</returns>
-        </member>
-        <member name="M:Microsoft.Azure.WebJobs.DurableOrchestrationClientBase.WaitForCompletionOrCreateCheckStatusResponseAsync(System.Net.Http.HttpRequestMessage,System.String,System.TimeSpan)">
+            Creates an HTTP response which either contains a payload of management URLs for a non-completed instonClientBase.WaitForCompletionOrCreateCheckStatusResponseAsync(System.Net.Http.HttpRequestMessage,System.String,System.TimeSpan)">
             <summary>
             Creates an HTTP response which either contains a payload of management URLs for a non-completed instance
             or contains the payload containing the output of the completed orchestration.
@@ -1920,6 +1961,196 @@
             Gets or sets the JSON-serializeable input data for the orchestrator function.
             </summary>
             <value>JSON-serializeable input value for the orchestrator function.</value>
+        </member>
+        <member name="T:DurableRpcReflection">
+            <summary>Holder for reflection information generated from DurableRpc.proto</summary>
+        </member>
+        <member name="P:DurableRpcReflection.Descriptor">
+            <summary>File descriptor for DurableRpc.proto</summary>
+        </member>
+        <member name="F:ClientRequest.TypeFieldNumber">
+            <summary>Field number for the "type" field.</summary>
+        </member>
+        <member name="P:ClientRequest.Type">
+            <summary>
+            Type of client request.
+            </summary>
+        </member>
+        <member name="F:ClientRequest.ArgsFieldNumber">
+            <summary>Field number for the "args" field.</summary>
+        </member>
+        <member name="P:ClientRequest.Args">
+            <summary>
+            Request arguments
+            </summary>
+        </member>
+        <member name="F:ClientRequest.ConfigFieldNumber">
+            <summary>Field number for the "config" field.</summary>
+        </member>
+        <member name="T:ClientRequest.Types">
+            <summary>Container for nested types declared in the ClientRequest message type.</summary>
+        </member>
+        <member name="F:ClientResponse.ResultFieldNumber">
+            <summary>Field number for the "result" field.</summary>
+        </member>
+        <member name="P:ClientResponse.Result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ClientResponse.ErrorFieldNumber">
+            <summary>Field number for the "error" field.</summary>
+        </member>
+        <member name="P:ClientResponse.Error">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:ClientResponse.DataFieldNumber">
+            <summary>Field number for the "data" field.</summary>
+        </member>
+        <member name="P:ClientResponse.Data">
+            <summary>
+            TODO: not bytes
+            </summary>
+        </member>
+        <member name="T:ClientResponse.Types">
+            <summary>Container for nested types declared in the ClientResponse message type.</summary>
+        </member>
+        <member name="T:DurableTypedData">
+            <summary>
+            Used to encapsulate data which could be a variety of types
+            </summary>
+        </member>
+        <member name="F:DurableTypedData.StringFieldNumber">
+            <summary>Field number for the "string" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.JsonFieldNumber">
+            <summary>Field number for the "json" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.BytesFieldNumber">
+            <summary>Field number for the "bytes" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.BoolFieldNumber">
+            <summary>Field number for the "bool" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.IntFieldNumber">
+            <summary>Field number for the "int" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.TimestampFieldNumber">
+            <summary>Field number for the "timestamp" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.CollectionStringFieldNumber">
+            <summary>Field number for the "collection_string" field.</summary>
+        </member>
+        <member name="F:DurableTypedData.CollectionStatusFieldNumber">
+            <summary>Field number for the "collection_status" field.</summary>
+        </member>
+        <member name="T:DurableTypedData.DataOneofCase">
+            <summary>Enum of possible cases for the "data" oneof.</summary>
+        </member>
+        <member name="T:StringCollection">
+            <summary>
+            Used to encapsulate collection string
+            </summary>
+        </member>
+        <member name="F:StringCollection.StringsFieldNumber">
+            <summary>Field number for the "strings" field.</summary>
+        </member>
+        <member name="F:StatusCollection.StatusesFieldNumber">
+            <summary>Field number for the "statuses" field.</summary>
+        </member>
+        <member name="F:StatusCollection.ContinuationTokenFieldNumber">
+            <summary>Field number for the "continuationToken" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.NameFieldNumber">
+            <summary>Field number for the "name" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.IdFieldNumber">
+            <summary>Field number for the "id" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.CreatedTimeFieldNumber">
+            <summary>Field number for the "createdTime" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.LastUpdatedTimeFieldNumber">
+            <summary>Field number for the "lastUpdatedTime" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.InputFieldNumber">
+            <summary>Field number for the "input" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.OutputFieldNumber">
+            <summary>Field number for the "output" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.RuntimeStatusFieldNumber">
+            <summary>Field number for the "runtime_status" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.CustomStatusFieldNumber">
+            <summary>Field number for the "customStatus" field.</summary>
+        </member>
+        <member name="F:RpcOrchestrationStatus.HistoryFieldNumber">
+            <summary>Field number for the "history" field.</summary>
+        </member>
+        <member name="T:ClientConfig">
+            <summary>
+            Information from the client binding
+            </summary>
+        </member>
+        <member name="F:ClientConfig.TaskHubFieldNumber">
+            <summary>Field number for the "task_hub" field.</summary>
+        </member>
+        <member name="F:ClientConfig.ConnectionFieldNumber">
+            <summary>Field number for the "connection" field.</summary>
+        </member>
+        <member name="P:DurableRpc.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:DurableRpc.DurableRpcBase">
+            <summary>Base class for server-side implementations of DurableRpc</summary>
+        </member>
+        <member name="T:DurableRpc.DurableRpcClient">
+            <summary>Client for DurableRpc</summary>
+        </member>
+        <member name="M:DurableRpc.DurableRpcClient.#ctor(Grpc.Core.Channel)">
+            <summary>Creates a new client for DurableRpc</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:DurableRpc.DurableRpcClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for DurableRpc that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:DurableRpc.DurableRpcClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:DurableRpc.DurableRpcClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:DurableRpc.DurableRpcClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:DurableRpc.BindService(DurableRpc.DurableRpcBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:DurableRpc.BindService(Grpc.Core.ServiceBinderBase,DurableRpc.DurableRpcBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>
+e.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:DurableRpc.BindService(DurableRpc.DurableRpcBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:DurableRpc.BindService(Grpc.Core.ServiceBinderBase,DurableRpc.DurableRpcBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
         </member>
     </members>
 </doc>

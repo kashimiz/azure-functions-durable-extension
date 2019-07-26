@@ -2,6 +2,8 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
+using Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc;
+using Microsoft.Azure.WebJobs.Extensions.DurableTask.Grpc.Abstractions;
 #if NETSTANDARD2_0
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,7 +35,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.DurableTask
 
             builder.AddExtension<DurableTaskExtension>()
                 .BindOptions<DurableTaskOptions>()
-                .Services.AddSingleton<IConnectionStringResolver, WebJobsConnectionStringProvider>();
+                .Services.AddSingleton<IConnectionStringResolver, WebJobsConnectionStringProvider>()
+                .AddSingleton<IRpcServer, GrpcServer>();
 
             return builder;
         }

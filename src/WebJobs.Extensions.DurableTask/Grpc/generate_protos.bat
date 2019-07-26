@@ -38,7 +38,7 @@ set NUGET_PATH=%UserProfile%\.nuget\packages
 set GRPC_TOOLS_PATH=%NUGET_PATH%\grpc.tools\1.20.1\tools\windows_x86
 set PROTO_PATH=.\protobuf
 set PROTO=%PROTO_PATH%\DurableRpc.proto
-set PROTOBUF_TOOLS=%NUGET_PATH%\google.protobuf.tools\3.8.0\tools
+set PROTOBUF_TOOLS=%NUGET_PATH%\google.protobuf.tools\3.7.0\tools
 set MSGDIR=.\Messages
 
 if exist %MSGDIR% rmdir /s /q %MSGDIR%
